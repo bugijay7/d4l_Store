@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+:root {
+  --font-family: 'Nanum Gothic', sans-serif;
+
+  --gradient-text: linear-gradient(89.97deg, #d1c9c7 1.84%, #efcbc4 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #630404 -13.86%, #740338 99.55%);
+  
+  --color-bg: #fffbf4;
+  --color-footer : #a7ba93;
+  --color-blog: #d86311;
+  --color-text: #632315;
+  --color-subtext: black; }

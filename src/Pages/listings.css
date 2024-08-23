@@ -1,0 +1,193 @@
+/* General Listings Page Styles */
+.listings-box {
+  width: 100%;
+  background-color: rgb(10, 0, 0);
+}
+
+.listings {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.listings-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.category-buttons {
+  width: 100%;
+  margin: auto;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin-bottom: 30px;
+}
+
+.filter-button {
+  background-color: #4CAF50; /* Green background */
+  border: none;             /* Remove borders */
+  color: white;             /* White text */
+  padding: 15px 32px;       /* Some padding */
+  text-align: center;       /* Centered text */
+  text-decoration: none;    /* Remove underline */
+  display: inline-block;    /* Make the button inline-block */
+  font-size: 16px;          /* Increase font size */
+  margin: 4px 2px;          /* Some margin */
+  cursor: pointer;          /* Pointer/hand icon on hover */
+  border-radius: 12px;      /* Rounded corners */
+  transition-duration: 0.4s; /* 0.4 second transition effect to hover state */
+}
+
+.filter-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  margin: auto;
+  max-width: 1200px; /* Max width for the grid */
+}
+
+.product-card {
+  width: 100%;
+  height: auto; /* Adjust height to fit content */
+  border-radius: 8px;
+  background-color: transparent; /* Slightly off-white for contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  color: #424530;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  transform: scale(1.03); /* Slightly scale up on hover */
+}
+
+.product-image {
+  width: 100%;
+  height: 250px; /* Fixed height for uniform images */
+  object-fit: cover; /* Ensure image covers the container */
+  border-bottom: 2px solid #f0f0f0; /* Subtle border for separation */
+}
+
+.product-info-listings {
+  padding: 10px;
+}
+
+.product-name-listings {
+  font-size: 1em;
+  color: var(--color-subtext);
+  margin: 10px 0;
+}
+
+.product-description-listings {
+  font-size: 0.9em;
+  color: #666;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.product-price-listings {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.product-details-link {
+  color: #4CAF50; /* Matching link color with button */
+  text-decoration: none;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.product-details-link:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+
+
+/* Mobile View Styles */
+@media (max-width: 768px) {
+  .listings-box {
+    background-color: rgb(10, 0, 0);
+  }
+
+  .listings {
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .listings-title {
+    font-size: 2em; /* Slightly smaller title for mobile */
+  }
+
+  .category-buttons {
+    padding-bottom: 5px;
+    margin-bottom: 8px; /* Adjusted margin */
+  }
+
+  .filter-button {
+    padding: 4px 8px; /* Adjusted padding for mobile */
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Reduced gap for mobile */
+    justify-content: space-between;
+  }
+
+  .product-card {
+    width: calc(50% - 10px); /* Two cards per row with some margin */
+    height: auto; /* Adjust height to fit content */
+    border-radius: 8px;
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    color: #424530;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  
+  .product-image {
+    height: 150px;
+    width: 100%
+  }
+
+  .product-info-listings {
+    padding: 3px; /* Adjusted padding */
+  }
+
+  .product-name-listings {
+    font-size: 1em;
+  }
+
+  .product-description-listings {
+    font-size: 0.8em; /* Adjusted font size */
+  }
+
+  .product-price-listings {
+    font-size: 1em; /* Adjusted font size */
+  }
+
+  .product-details-link {
+    font-size: 0.9em; /* Smaller font size */
+  }
+}

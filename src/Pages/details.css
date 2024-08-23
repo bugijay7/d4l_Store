@@ -1,0 +1,127 @@
+/* General Styles for Product Details Page */
+.product-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(10, 0, 0); /* Dark background for consistency */
+  padding: 10px; /* Add padding for spacing */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+   flex-direction: column;
+   margin-top: -10px;
+}
+
+.product-details {
+  width: 400px;
+  height: fit-content;
+  background-color: transparent; /* Background color for details */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Consistent shadow */
+  padding: 15px; /* Padding inside the container */
+  color: white; /* Text color */
+  margin-bottom: -10px; /* Spacing below the details */
+}
+.product-image {
+  width: 100%;
+  height: 450px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.product-name {
+  font-size: 1.5em; /* Adjust font size for mobile */
+  margin-bottom: 10px; /* Margin for spacing */
+  text-align: left;
+}
+
+.product-description {
+  font-size: 1.2em; /* Adjust font size for mobile */
+  margin-bottom: 10px; /* Margin for spacing */
+}
+
+.product-price {
+  font-size: 1.2em; /* Adjust font size for mobile */
+  color: #27ae60; /* Price color */
+  margin-bottom: 10px; /* Margin for spacing */
+}
+
+.add-to-cart-button {
+  padding: 10px 20px;
+  background-color: #e09123;
+  color: white;
+  border: none; /* Remove border for cleaner look */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+  text-align: center; /* Center text */
+  margin-top: 10px;
+}
+
+.add-to-cart-button:hover {
+  background-color: black; /* Darker color on hover */
+  margin-top: 10px;
+}
+
+.go-to-cart-button {
+  margin-bottom: -55px;
+  padding: 10px 20px;
+  background-color: #e09123;
+  color: white;
+  border: none; /* Remove border for cleaner look */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+  text-align: center; /* Center text */
+  margin-top:  -40px;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .product-container {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(10, 0, 0); /* Dark background for consistency */
+    padding: 20px; /* Add padding for spacing */
+  }
+  .product-details {
+    width: 80%;
+    padding: 10px; /* Padding for mobile view */
+    height: 100%;
+    margin: auto;
+    background-color: transparent;
+  }
+
+  .product-name {
+    font-size: 1.3em; /* Adjust font size for smaller screens */
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .product-description {
+    font-size: 1em; /* Adjust font size for smaller screens */
+    margin-top: 16px;
+    text-align: left;
+  }
+
+  .product-price {
+    font-size: 1em; /* Adjust font size for smaller screens */
+    margin-top: 16px;
+    text-align: left;
+  }
+
+  .add-to-cart-button {
+    padding: 8px 16px; /* Adjust button padding for mobile screens */
+    margin-top: 16px;
+    text-align: left;
+  }
+  .go-to-cart-button {
+    padding: 10px 20px;
+    background-color: #e09123;
+    color: white;
+    border: none; /* Remove border for cleaner look */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center text */
+    margin-top:  20px;
+    margin-left: 30%;
+  }
+}

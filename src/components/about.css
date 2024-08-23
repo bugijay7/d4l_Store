@@ -1,0 +1,105 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    background-color: #e39f6e;
+    border-radius: 12px;
+    box-shadow: 0 0 8px  var(--gradient-text);
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+  
+  .about-image-wrapper {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .image {
+    width: 350px;
+    height: 500px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-text {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .about-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color:  #fdfefe;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .about-text p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #fdfec2;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .about-text p:last-child {
+    margin-bottom: 0;
+  }
+  
+
+  /* Magazine Style Mobile View */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 12px;
+    box-shadow: 0 0 8px var(--gradient-text);
+    margin: 20px auto;
+    max-width: 100%;
+  }
+
+  .about-image-wrapper {
+    flex: none;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .about-text {
+    flex: none;
+    padding-left: 0;
+    text-align: justify;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px #424530;
+  }
+
+  .about-text h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #fdfefe;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .about-text p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #fdfec2;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+  }
+}

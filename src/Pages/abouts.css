@@ -1,0 +1,81 @@
+/* about.css */
+
+/* General Styles */
+.abouts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .abouts-container > * {
+    margin-bottom: 20px;
+  }
+  
+  /* About Component Styles */
+  .about {
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .about h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .about p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Popup Component Styles */
+  .popup {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .about-container {
+      border-radius: 0;
+      background-color: transparent;
+    }
+  
+    .about h1 {
+      font-size: 1.5rem;
+    }
+  
+    .about p {
+      font-size: 0.875rem;
+    }
+  
+    .popup {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-container {
+      border-radius: 0;
+      background-color: transparent;
+    }
+  
+    .about h1 {
+      font-size: 1.25rem;
+    }
+  
+    .about p {
+      font-size: 0.75rem;
+    }
+  
+    .popup {
+      padding: 10px;
+      border-radius: 6px;
+    }
+  }
+  

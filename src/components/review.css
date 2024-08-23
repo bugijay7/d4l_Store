@@ -1,0 +1,176 @@
+.reviews {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1400px;
+}  
+
+.review-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    border-radius: 24px;
+    line-height: 1.6;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    margin-bottom: 16px; /* Add spacing between reviews */
+  }
+  h1 {
+    color: white;
+    font-family: var(--font-family);
+  }
+  
+  .review-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px; /* Adjust gap between elements */
+    padding: 20px;
+    border-radius: 22px;
+    color: #ffffff;
+    overflow: hidden;
+    background-color: #424530;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    width: 100%; /* Ensure the content takes full width of the card */
+  }
+  
+  .review-content::before {
+    position: absolute;
+    content: "";
+    top: -4%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translate(-50%);
+    background: #ced8ff;
+    z-index: -1;
+    transform-origin: bottom;
+    border-radius: inherit;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .review-content::after {
+    position: absolute;
+    content: "";
+    top: -8%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%);
+    background: #e7ecff;
+    z-index: -2;
+    transform-origin: bottom;
+    border-radius: inherit;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .review-content svg {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .review-content .review-text {
+    z-index: 1;
+    opacity: 1;
+    font-size: 18px;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .review-content .review-link {
+    z-index: 1;
+    color: #fea000;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .review-content .review-link:hover {
+    text-decoration: underline;
+  }
+  
+  .review-card:hover {
+    transform: translate(0px, -16px);
+  }
+  
+  .review-card:hover .review-content::before {
+    rotate: -8deg;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .review-card:hover .review-content::after {
+    rotate: 8deg;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  /* Mobile Styles */
+@media (max-width: 768px) {
+  .reviews {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Adjust width to fit mobile screens */
+  }  
+
+  .review-card {
+    width: 90%; /* Full width of the screen with padding */
+    margin-bottom: 20px; /* Increase space between cards */
+    border-radius: 20px; /* Slightly smaller border radius for mobile */
+  }
+
+  .review-content {
+    padding: 15px; /* Adjust padding for smaller screens */
+    gap: 12px; /* Adjust gap between elements */
+    border-radius: 20px;
+    font-size: 16px; /* Adjust font size for better readability */
+    width: 100%; /* Ensure content takes full width of the card */
+  }
+
+  .review-content::before {
+    top: -6%;
+    width: 85%;
+    height: 85%;
+    transform: translate(-50%);
+    background: #424530;
+    border-radius: inherit;
+  }
+
+  .review-content::after {
+    top: -10%;
+    width: 75%;
+    height: 75%;
+    transform: translate(-50%);
+    background: #e7ecff;
+    border-radius: inherit;
+  }
+
+  .review-content svg {
+    width: 40px;
+    height: 40px; /* Slightly smaller icon for mobile */
+  }
+
+  .review-content .review-text {
+    font-size: 16px; /* Adjust font size for mobile readability */
+  }
+
+  .review-content .review-link {
+    font-size: 14px; /* Adjust link font size for mobile */
+  }
+
+  .review-card:hover {
+    transform: translate(0px, -10px); /* Slightly reduce hover effect for mobile */
+  }
+
+  .review-card:hover .review-content::before,
+  .review-card:hover .review-content::after {
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
